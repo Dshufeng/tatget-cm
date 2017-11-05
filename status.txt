@@ -1,0 +1,577 @@
+Attaching to refreshcm_redis_1, refreshcm_checker-cm_1, refreshcm_refresh-cm_1
+[36mredis_1       |[0m Starting redis-server...
+[32mrefresh-cm_1  |[0m OpenJDK 64-Bit Server VM warning: ignoring option PermSize=128m; support was removed in 8.0
+[33mchecker-cm_1  |[0m Start gRPC Gateway into host :10061
+[32mrefresh-cm_1  |[0m OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+[33mchecker-cm_1  |[0m http on host: [::]:10062
+[33mchecker-cm_1  |[0m Start gRPC on host [::]:10061
+[36mredis_1       |[0m [1] 05 Nov 01:45:14.240 # Server started, Redis version 2.8.4
+[36mredis_1       |[0m [1] 05 Nov 01:45:14.240 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[32mrefresh-cm_1  |[0m 
+[32mrefresh-cm_1  |[0m   .   ____          _            __ _ _
+[32mrefresh-cm_1  |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[32mrefresh-cm_1  |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[32mrefresh-cm_1  |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[32mrefresh-cm_1  |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[32mrefresh-cm_1  |[0m  =========|_|==============|___/=/_/_/_/
+[32mrefresh-cm_1  |[0m  :: Spring Boot ::        (v1.5.3.RELEASE)
+[32mrefresh-cm_1  |[0m 
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:17.159  INFO 1 --- [           main] cn.com.isc.App                           : Starting App v0.0.1-SNAPSHOT on 10aa76f741bb with PID 1 (/refresh-cm.jar started by root in /)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:17.162  INFO 1 --- [           main] cn.com.isc.App                           : No active profile set, falling back to default profiles: default
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:17.226  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5387f9e0: startup date [Sun Nov 05 01:45:17 UTC 2017]; root of context hierarchy
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.022  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.179  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.193  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.IPRepository.
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.194  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.LoginFilterRepository.
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.194  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.ConfigRepository.
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.194  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.TokenRepository.
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.194  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.FlagRepository.
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.623  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d3b54440] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.658  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'threadPoolTaskSchedulerConfig' of type [io.stackdocker.iscc.flagserver.ThreadPoolTaskSchedulerConfig$$EnhancerBySpringCGLIB$$e10752ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.706  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.719  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.726  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:18.727  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1cc77a5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.086  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.099  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.100  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.393  INFO 1 --- [ost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.540  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.540  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2317 ms
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.842  INFO 1 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.856  INFO 1 --- [ost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+[32mrefresh-cm_1  |[0m 	name: default
+[32mrefresh-cm_1  |[0m 	...]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.996  INFO 1 --- [ost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.997  INFO 1 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:19.998  INFO 1 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:20.049  INFO 1 --- [ost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:20.521  INFO 1 --- [ost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:20.866  INFO 1 --- [ost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:20.943  INFO 1 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.175  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.179  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.180  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.180  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.180  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.180  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'ipFilter' to urls: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.180  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loginFilter' to urls: [/*]
+[32mrefresh-cm_1  |[0m Hibernate: select ipfilter0_.id as id1_3_0_, ipfilter0_.value as value2_3_0_ from ip_filter ipfilter0_ where ipfilter0_.id=?
+[32mrefresh-cm_1  |[0m ??????
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.352  INFO 1 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:21.660  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.320  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConfig],methods=[GET]}" onto public cn.com.isc.entity.Config cn.com.isc.controller.ConfigController.get()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.321  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveConfig],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.ConfigController.saveIpFilter(cn.com.isc.entity.Config)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.321  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveteam],methods=[POST]}" onto public boolean cn.com.isc.controller.ConfigController.saveteamtoken(java.util.List<cn.com.isc.entity.Token>)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.322  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Validate],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> cn.com.isc.controller.FlagController.get(cn.com.isc.entity.Flag)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.323  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.FlagController.get()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.323  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/open],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.FlagController.test()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.323  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getMechineFlag],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> cn.com.isc.controller.FlagController.getFlag(cn.com.isc.entity.Flag)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.324  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getIpFilter],methods=[GET]}" onto public cn.com.isc.entity.IpFilter cn.com.isc.controller.IpFilterController.get()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.324  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveIpFileter],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.IpFilterController.saveIpFilter(cn.com.isc.entity.IpFilter)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.324  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/checkLogin],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.LoginController.checkLogin(cn.com.isc.entity.Admin,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.325  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String cn.com.isc.controller.WelcomeController.welcome()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.329  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/Validate],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> io.stackdocker.iscc.flagserver.controller.RefreshController.get(cn.com.isc.entity.Flag)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.329  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-creation],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.createRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.329  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-deletion],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.deleteRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.329  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-updation],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.updateRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.330  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/statuses],methods=[GET]}" onto public java.util.List<io.stackdocker.iscc.flagserver.api.RefreshReqResp> io.stackdocker.iscc.flagserver.controller.RefreshController.getAll()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.330  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/statuses/{id}],methods=[GET]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.getOne(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.330  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/find/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.stackdocker.iscc.flagserver.api.RefreshReqResp> io.stackdocker.iscc.flagserver.controller.RefreshController.findOne(java.lang.Integer)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.333  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.333  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.334  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.336  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.337  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.510  INFO 1 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.630  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5387f9e0: startup date [Sun Nov 05 01:45:17 UTC 2017]; root of context hierarchy
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.700  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.700  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.755  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:22.807  INFO 1 --- [           main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.196  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.208  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.208  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.230  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.267  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.492  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingPOST_1
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.501  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.505  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveIpFilterUsingPOST_1
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.563  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingPOST_2
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.652  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+[32mrefresh-cm_1  |[0m Hibernate: select flag0_.id as id1_2_, flag0_.round as round2_2_, flag0_.team_no as team_no3_2_, flag0_.token as token4_2_, flag0_.env as env5_2_, flag0_.md5string as md6_2_ from flag flag0_
+[32mrefresh-cm_1  |[0m Flag????
+[32mrefresh-cm_1  |[0m Hibernate: select token0_.id as id1_4_, token0_.team_no as team_no2_4_, token0_.token_value as token_va3_4_ from token token0_
+[32mrefresh-cm_1  |[0m Token????
+[32mrefresh-cm_1  |[0m 2017-11-05 01:45:23.688  INFO 1 --- [           main] cn.com.isc.App                           : Started App in 6.868 seconds (JVM running for 7.218)
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler2
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler2
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler1
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler3
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler3
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler2
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler2
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler5
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler5
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler2
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler1
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler1
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler1
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler1
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler1
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler4
+[32mrefresh-cm_1  |[0m ??????????
+[33mchecker-cm_1  |[0m I1105 04:22:57.914586       1 server.go:267] go to create: "name:\"14_daydayweb\" command:\"python\" command:\"awd14_daydayweb_check.py\" args:\"--host=$(ip)\" args:\"--port=$(port)\" work_dir:\"awd14_daydayweb\" periodic:20 duration:2194353 dest_configurations:<key:\"team1\" value:<name:\"14-5\" tpl:<key:\"ip\" value:\"192.168.2.207\" > tpl:<key:\"port\" value:\"60694\" > > > dest_configurations:<key:\"team2\" value:<name:\"14-4\" tpl:<key:\"ip\" value:\"192.168.2.207\" > tpl:<key:\"port\" value:\"40214\" > > > dest_configurations:<key:\"team4\" value:<name:\"14-3\" tpl:<key:\"ip\" value:\"192.168.2.207\" > tpl:<key:\"port\" value:\"56309\" > > > dest_configurations:<key:\"team5\" value:<name:\"14-2\" tpl:<key:\"ip\" value:\"192.168.2.207\" > tpl:<key:\"port\" value:\"38176\" > > > dest_configurations:<key:\"team6\" value:<name:\"14-1\" tpl:<key:\"ip\" value:\"192.168.2.207\" > tpl:<key:\"port\" value:\"63110\" > > > "
+[33mchecker-cm_1  |[0m Visited: examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py
+[33mchecker-cm_1  |[0m filepath.Walk() returned Stop recursive searching
+[33mchecker-cm_1  |[0m command: awd14_daydayweb_check.py
+[33mchecker-cm_1  |[0m Dest tpl: team4
+[33mchecker-cm_1  |[0m Dest tpl: team5
+[33mchecker-cm_1  |[0m Dest tpl: team6
+[33mchecker-cm_1  |[0m Dest tpl: team1
+[33mchecker-cm_1  |[0m Dest tpl: team2
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:17.915334986 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:17.915334986 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:17.915334986 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:17.915334986 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:17.915334986 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:19.574910       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:19.575946       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:19.857461       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:19.858122       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:19.858162       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:19.858569       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:20.328672       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:20.329280       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:20.329305       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:20.329635       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:20.611465       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:20.612113       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:20.612136       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:20.612560       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:23:20.914217       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:20.914899       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:20.914931       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:20.915375       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_code:2 state_message:"(True, 'msg')\n(False, 'upload page check')\n(False, 'upload page check')\n\n" timestamp:"2017-11-05T04:23:20Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:37.915302366 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:37.915302366 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:37.915302366 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:37.915302366 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:37.915302366 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:38.431863       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:38.432510       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:38.432540       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:38.432929       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:38.719263       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:38.719934       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:38.719962       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:38.720424       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:39.005569       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:39.006290       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:39.006323       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:39.006768       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:39.572810       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:39.573527       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:39.573551       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:39.573931       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:23:39.862310       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:39.863021       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:39.863050       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:39.863477       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_code:1 state_message:"(False, 'upload page check')\n(True, 'msg')\n(False, 'upload page check')\n\n" timestamp:"2017-11-05T04:23:39Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:57.915331822 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:57.915331822 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:57.915331822 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:57.915331822 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:23:57.915331822 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:58.310173       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:58.310851       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:58.310876       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:58.311422       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:23:58.598335       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:58.598969       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:58.599001       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:58.599402       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:58.939393       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:23:58.940014       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:58.940042       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:58.940480       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:23:59.459087       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:59.459734       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:59.459757       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:59.460093       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:23:59.773340       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:23:59.773995       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:23:59.774023       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:23:59.774551       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_code:1 state_message:"(False, 'upload page check')\n(True, 'msg')\n(False, 'upload page check')\n\n" timestamp:"2017-11-05T04:23:59Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:17.915341682 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:17.915341682 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:17.915341682 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:17.915341682 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:17.915341682 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:18.337888       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:24:18.338517       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:18.667638       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:18.668241       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:18.668264       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:18.668620       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:24:18.966871       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:18.967439       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:18.967465       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:18.967907       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:19.461263       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:24:19.461928       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:19.461965       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:19.462334       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:24:19.653488       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:19.654130       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:19.654157       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:19.654529       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_code:1 state_message:"(False, 'upload page check')\n(True, 'msg')\n(False, 'upload page check')\n\n" timestamp:"2017-11-05T04:24:19Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_code:1 state_message:"(False, 'upload page check')\n(True, 'msg')\n(False, 'upload page check')\n\n" timestamp:"2017-11-05T04:23:59Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:37.91534817 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:37.91534817 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:37.91534817 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:37.91534817 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:37.91534817 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m I1105 04:24:38.277898       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:38.278598       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:38.278632       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:38.279024       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:38.484602       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:24:38.485278       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:38.485310       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:38.485753       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:24:38.693568       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:38.694204       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:38.694250       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:38.694661       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:24:38.911100       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:38.911860       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:38.911889       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:38.912257       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:39.212247       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:24:39.212844       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:39.212874       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:39.213304       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:38Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_code:1 state_message:"(False, 'upload page check')\n(True, 'msg')\n(False, 'upload page check')\n\n" timestamp:"2017-11-05T04:23:59Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:57.915302358 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:57.915302358 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:57.915302358 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:57.915302358 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:24:57.915302358 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m I1105 04:24:58.381628       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:58.382257       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:58.581025       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:58.581684       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:58.581717       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:58.582107       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:24:58.787096       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:58.787735       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:58.787763       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:58.788309       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:24:58.988310       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:58.988936       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:58.988966       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:58.989334       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:24:59.356647       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:24:59.357267       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:24:59.357309       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:24:59.358067       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:58Z" > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:38Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_code:1 state_message:"(False, 'upload page check')\n(True, 'msg')\n(False, 'upload page check')\n\n" timestamp:"2017-11-05T04:23:59Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:17.915354171 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:17.915354171 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:17.915354171 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:17.915354171 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:17.915354171 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:18.308560       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:18.309287       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:18.309321       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:18.309722       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:18.507089       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:18.507685       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:18.507720       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:18.508142       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:18.734629       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:18.735307       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:18.735336       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:18.735740       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:25:18.950434       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:18.951112       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:18.951138       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:18.951496       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:19.250453       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:19.251149       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:19.251180       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:19.251541       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:58Z" > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:38Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:25:18Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:37.91529369 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:37.91529369 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:37.91529369 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:37.91529369 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:37.91529369 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:38.261958       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:38.262639       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:38.476609       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:38.477270       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:38.477302       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:38.477695       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:38.683867       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:38.684421       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:38.684448       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:38.684918       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:25:38.901732       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:38.902449       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:38.902479       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:38.902857       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:25:39.219805       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:39.220422       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:39.220448       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:39.220777       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:58Z" > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:38Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:25:38Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:57.915333178 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:57.915333178 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:57.915333178 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:57.915333178 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:25:57.915333178 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:58.207080       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:58.207736       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:58.401049       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:58.401665       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:58.401689       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:58.402056       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:58.609310       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:58.610015       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:58.610040       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:58.610432       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:25:58.835487       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:58.836151       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:58.836180       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:58.836638       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:25:59.122856       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:25:59.123555       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:25:59.123579       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:25:59.123966       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:58Z" > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:25:58Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:25:38Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:17.915337775 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:17.915337775 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:17.915337775 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:17.915337775 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:17.915337775 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:18.245853       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:18.246468       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:18.449409       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:18.450503       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:18.450525       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:18.450908       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:18.658567       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:18.659291       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:18.659319       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:18.659968       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:18.850757       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:18.851438       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:18.851464       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:18.851849       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:19.154634       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:19.155268       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:19.155294       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:19.155944       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:58Z" > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:26:18Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:25:38Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:37.915329045 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:37.915329045 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:37.915329045 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:37.915329045 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:37.915329045 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m I1105 04:26:38.245066       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:38.246122       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:38.427054       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:38.427709       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:38.427736       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:38.428085       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:26:38.610053       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:38.610726       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:38.610764       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:38.611219       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:26:38.837243       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:38.837906       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:38.837932       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:38.838305       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:39.112044       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:39.112690       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:39.112712       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:39.113083       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:26:53.107114       1 server.go:540] go to reap: ""
+[33mchecker-cm_1  |[0m proto: no coders for int
+[33mchecker-cm_1  |[0m I1105 04:26:53.112307       1 server.go:540] go to reap: "name:\"14_daydayweb\" "
+[33mchecker-cm_1  |[0m I1105 04:26:53.117558       1 server.go:540] go to reap: "name:\"14_daydayweb\" "
+[33mchecker-cm_1  |[0m name:"14_daydayweb" command:"python" command:"awd14_daydayweb_check.py" args:"--host=192.168.2.207" args:"--port=56309" work_dir:"awd14_daydayweb" periodic:20 duration:2194353 dest_configurations:<key:"team1" value:<name:"14-5" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"60694" > > > dest_configurations:<key:"team2" value:<name:"14-4" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"40214" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:26:38Z" > > dest_configurations:<key:"team4" value:<name:"14-3" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"56309" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:24:58Z" > > dest_configurations:<key:"team5" value:<name:"14-2" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"38176" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:26:18Z" > > dest_configurations:<key:"team6" value:<name:"14-1" args:"--host=192.168.2.207" args:"--port=56309" tpl:<key:"ip" value:"192.168.2.207" > tpl:<key:"port" value:"63110" > state_message:"(False, 'upload page check')\n(False, 'upload page check')\n(True, 'msg')\n\n" timestamp:"2017-11-05T04:25:38Z" > > destination_path:"examples/python/check-alive/awd14_daydayweb/awd14_daydayweb_check.py" 
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:57.915334439 +0000 UTC -> key: team1
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:57.915334439 +0000 UTC -> key: team2
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:57.915334439 +0000 UTC -> key: team4
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:57.915334439 +0000 UTC -> key: team5
+[33mchecker-cm_1  |[0m Tick at 2017-11-05 04:26:57.915334439 +0000 UTC -> key: team6
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:58.189621       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:58.190302       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:58.255395       1 server.go:552] go to delete: "name:\"14_daydayweb\" "
+[33mchecker-cm_1  |[0m Ticker stopped
+[33mchecker-cm_1  |[0m I1105 04:26:58.475946       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:58.476577       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:58.476603       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:58.476970       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:58.663233       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:58.663833       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:58.663869       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:58.664261       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m (False, 'upload page check')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:58.872551       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m I1105 04:26:58.873149       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:58.873178       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:58.873545       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:26:59.183027       1 server.go:566] write cm into cache
+[33mchecker-cm_1  |[0m (True, 'msg')
+[33mchecker-cm_1  |[0m 
+[33mchecker-cm_1  |[0m I1105 04:26:59.183683       1 server.go:594] Set CM checkalive.14_daydayweb: OK
+[33mchecker-cm_1  |[0m I1105 04:26:59.183709       1 server.go:646] publish check...
+[33mchecker-cm_1  |[0m I1105 04:26:59.184305       1 server.go:667] Published subject checkalive.14_daydayweb: 0
+[33mchecker-cm_1  |[0m I1105 04:26:59.346314       1 server.go:540] go to reap: ""
+[33mchecker-cm_1  |[0m proto: no coders for int
+[33mchecker-cm_1  |[0m I1105 04:26:59.351467       1 server.go:540] go to reap: "name:\"14_daydayweb\" "
+[33mchecker-cm_1  |[0m proto: no coders for int
+[33mchecker-cm_1  |[0m I1105 04:27:03.543658       1 server.go:540] go to reap: ""
+[33mchecker-cm_1  |[0m proto: no coders for int
+[33mchecker-cm_1  |[0m I1105 04:27:03.548950       1 server.go:540] go to reap: "name:\"14_daydayweb\" "
+[33mchecker-cm_1  |[0m proto: no coders for int
