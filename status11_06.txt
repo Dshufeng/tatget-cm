@@ -1,0 +1,236 @@
+Attaching to refreshcm_checker-cm_1, refreshcm_refresh-cm_1, refreshcm_redis_1
+[36mchecker-cm_1  |[0m Start gRPC Gateway into host :10061
+[36mchecker-cm_1  |[0m Start gRPC on host [::]:10061
+[36mchecker-cm_1  |[0m http on host: [::]:10062
+[33mrefresh-cm_1  |[0m OpenJDK 64-Bit Server VM warning: ignoring option PermSize=128m; support was removed in 8.0
+[33mrefresh-cm_1  |[0m OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+[32mredis_1       |[0m Starting redis-server...
+[32mredis_1       |[0m [1] 06 Nov 10:28:10.507 # Server started, Redis version 2.8.4
+[32mredis_1       |[0m [1] 06 Nov 10:28:10.511 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[33mrefresh-cm_1  |[0m 
+[33mrefresh-cm_1  |[0m   .   ____          _            __ _ _
+[33mrefresh-cm_1  |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[33mrefresh-cm_1  |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[33mrefresh-cm_1  |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[33mrefresh-cm_1  |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[33mrefresh-cm_1  |[0m  =========|_|==============|___/=/_/_/_/
+[33mrefresh-cm_1  |[0m  :: Spring Boot ::        (v1.5.3.RELEASE)
+[33mrefresh-cm_1  |[0m 
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:13.783  INFO 1 --- [           main] cn.com.isc.App                           : Starting App v0.0.1-SNAPSHOT on 799ea59ae25e with PID 1 (/refresh-cm.jar started by root in /)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:13.811  INFO 1 --- [           main] cn.com.isc.App                           : No active profile set, falling back to default profiles: default
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:14.132  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5387f9e0: startup date [Mon Nov 06 10:28:14 UTC 2017]; root of context hierarchy
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:17.177  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:17.677  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:17.783  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.IPRepository.
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:17.785  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.LoginFilterRepository.
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:17.785  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.ConfigRepository.
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:17.785  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.TokenRepository.
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:17.785  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.FlagRepository.
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:19.102  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6b2b1e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:19.244  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'threadPoolTaskSchedulerConfig' of type [io.stackdocker.iscc.flagserver.ThreadPoolTaskSchedulerConfig$$EnhancerBySpringCGLIB$$e404c08f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:19.386  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:19.421  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:19.445  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:19.446  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1fc4e7ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:20.957  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:21.027  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:21.029  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:21.903  INFO 1 --- [ost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:22.171  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:22.171  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8136 ms
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:23.390  INFO 1 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:23.457  INFO 1 --- [ost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+[33mrefresh-cm_1  |[0m 	name: default
+[33mrefresh-cm_1  |[0m 	...]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:23.662  INFO 1 --- [ost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:23.663  INFO 1 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:23.667  INFO 1 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:23.800  INFO 1 --- [ost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:24.943  INFO 1 --- [ost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:25.548  INFO 1 --- [ost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:25.759  INFO 1 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.225  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.266  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.266  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.266  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.266  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.266  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'ipFilter' to urls: [/*]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.267  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loginFilter' to urls: [/*]
+[33mrefresh-cm_1  |[0m Hibernate: select ipfilter0_.id as id1_3_0_, ipfilter0_.value as value2_3_0_ from ip_filter ipfilter0_ where ipfilter0_.id=?
+[33mrefresh-cm_1  |[0m ??????
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:26.601  INFO 1 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:27.134  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.357  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConfig],methods=[GET]}" onto public cn.com.isc.entity.Config cn.com.isc.controller.ConfigController.get()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.359  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveConfig],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.ConfigController.saveIpFilter(cn.com.isc.entity.Config)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.359  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveteam],methods=[POST]}" onto public boolean cn.com.isc.controller.ConfigController.saveteamtoken(java.util.List<cn.com.isc.entity.Token>)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.364  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Validate],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> cn.com.isc.controller.FlagController.get(cn.com.isc.entity.Flag)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.365  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.FlagController.get()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.365  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/open],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.FlagController.test()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.365  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getMechineFlag],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> cn.com.isc.controller.FlagController.getFlag(cn.com.isc.entity.Flag)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.365  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getIpFilter],methods=[GET]}" onto public cn.com.isc.entity.IpFilter cn.com.isc.controller.IpFilterController.get()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.365  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveIpFileter],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.IpFilterController.saveIpFilter(cn.com.isc.entity.IpFilter)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.366  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/checkLogin],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.LoginController.checkLogin(cn.com.isc.entity.Admin,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.366  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String cn.com.isc.controller.WelcomeController.welcome()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.382  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/Validate],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> io.stackdocker.iscc.flagserver.controller.RefreshController.get(cn.com.isc.entity.Flag)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.387  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-creation],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.createRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.388  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/statuses/{id}],methods=[GET]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.getOne(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.388  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-updation],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.updateRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.388  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/find/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.stackdocker.iscc.flagserver.api.RefreshReqResp> io.stackdocker.iscc.flagserver.controller.RefreshController.findOne(java.lang.Integer)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.389  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/statuses],methods=[GET]}" onto public java.util.List<io.stackdocker.iscc.flagserver.api.RefreshReqResp> io.stackdocker.iscc.flagserver.controller.RefreshController.getAll()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.389  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-deletion],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.deleteRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.398  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.398  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.399  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.407  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.417  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.713  INFO 1 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:28.921  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5387f9e0: startup date [Mon Nov 06 10:28:14 UTC 2017]; root of context hierarchy
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:29.046  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:29.046  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:29.164  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:29.232  INFO 1 --- [           main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.103  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.140  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.140  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.185  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.319  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.824  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingPOST_1
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.847  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.860  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveIpFilterUsingPOST_1
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:30.983  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingPOST_2
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:31.384  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+[33mrefresh-cm_1  |[0m Hibernate: select flag0_.id as id1_2_, flag0_.round as round2_2_, flag0_.team_no as team_no3_2_, flag0_.token as token4_2_, flag0_.env as env5_2_, flag0_.md5string as md6_2_ from flag flag0_
+[33mrefresh-cm_1  |[0m Flag????
+[33mrefresh-cm_1  |[0m Hibernate: select token0_.id as id1_4_, token0_.team_no as team_no2_4_, token0_.token_value as token_va3_4_ from token token0_
+[33mrefresh-cm_1  |[0m Token????
+[33mrefresh-cm_1  |[0m 2017-11-06 10:28:31.660  INFO 1 --- [           main] cn.com.isc.App                           : Started App in 18.734 seconds (JVM running for 22.089)
+[36mchecker-cm_1  |[0m I1106 10:28:37.543923       1 server.go:267] go to create: "name:\"lemon_check\" command:\"python\" command:\"awd01_lemon_cms_check.py\" args:\"--host=$(ip)\" args:\"--port=$(port)\" args:\"--send-test\" args:\"--test-url=$(php_web)\" work_dir:\"awd01_lemon_cms\" periodic:20 duration:2086013 dest_configurations:<key:\"team1\" value:<name:\"lemon_vm-4\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"64155\" > > > dest_configurations:<key:\"team2\" value:<name:\"lemon_vm-3\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"44760\" > > > dest_configurations:<key:\"team3\" value:<name:\"lemon_vm-2\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"36658\" > > > dest_configurations:<key:\"team4\" value:<name:\"lemon_vm-1\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"63008\" > > > "
+[36mchecker-cm_1  |[0m Visited: examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py
+[36mchecker-cm_1  |[0m filepath.Walk() returned Stop recursive searching
+[36mchecker-cm_1  |[0m command: awd01_lemon_cms_check.py
+[36mchecker-cm_1  |[0m Dest config of team2: name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > Dest config of team3: name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > Dest config of team4: name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > Dest config of team1: name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > I1106 10:28:41.121743       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m I1106 10:28:42.546244       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m I1106 10:28:44.115843       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m I1106 10:28:50.927230       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m I1106 10:28:51.906281       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m I1106 10:28:53.610696       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m I1106 10:28:54.686833       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m I1106 10:28:55.393348       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:20 duration:2086013 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:28:57.580813434 +0000 UTC m=+48.617714678 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:28:57.580813434 +0000 UTC m=+48.617714678 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:28:57.580813434 +0000 UTC m=+48.617714678 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:28:57.580813434 +0000 UTC m=+48.617714678 -> key: team1
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:28:59.907822       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:00.098418       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:00.984864       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:01.071245       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:01.899871       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:01.918863       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:02.372672       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:02.374965       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:20 duration:2086013 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:01Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n\n" timestamp:"2017-11-06T10:28:57Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:01Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:17.743078496 +0000 UTC m=+68.779979743 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:17.743078496 +0000 UTC m=+68.779979743 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:17.743078496 +0000 UTC m=+68.779979743 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:17.743078496 +0000 UTC m=+68.779979743 -> key: team4
+[36mchecker-cm_1  |[0m I1106 10:29:17.910046       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:17.911724       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m I1106 10:29:18.103493       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:18.105371       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:18.211013       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:18.212510       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:18.314894       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:18.316754       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:20 duration:2086013 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:17Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:17Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:18Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:18Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:37.580704663 +0000 UTC m=+88.617606069 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:37.580704663 +0000 UTC m=+88.617606069 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:37.580704663 +0000 UTC m=+88.617606069 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:37.580704663 +0000 UTC m=+88.617606069 -> key: team4
+[36mchecker-cm_1  |[0m I1106 10:29:37.823138       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:37.842178       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m I1106 10:29:37.942272       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:37.943275       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m I1106 10:29:38.042862       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:38.045137       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:38.170371       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:38.172800       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:20 duration:2086013 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:37Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:37Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:37Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:38Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:57.580258495 +0000 UTC m=+108.617159931 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:57.580258495 +0000 UTC m=+108.617159931 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:57.580258495 +0000 UTC m=+108.617159931 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:29:57.580258495 +0000 UTC m=+108.617159931 -> key: team4
+[36mchecker-cm_1  |[0m I1106 10:29:58.019273       1 checkctl.go:522] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:58.136013       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:58.140247       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:58.242583       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:58.243439       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:29:58.364045       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:29:58.365442       1 server.go:594] Set CM checkalive.lemon_check: OK
+[33mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler2
+[33mrefresh-cm_1  |[0m ??????????
+[36mchecker-cm_1  |[0m I1106 10:30:06.480092       1 server.go:540] go to reap: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:20 duration:2086013 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:37Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:58Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:58Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T10:29:58Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:30:17.580673613 +0000 UTC m=+128.617575044 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:30:17.580673613 +0000 UTC m=+128.617575044 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:30:17.580673613 +0000 UTC m=+128.617575044 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 10:30:17.580673613 +0000 UTC m=+128.617575044 -> key: team4
+[36mchecker-cm_1  |[0m I1106 10:30:17.769575       1 server.go:552] go to delete: "name:\"lemon_check\" "
+[36mchecker-cm_1  |[0m Ticker stopped
+[36mchecker-cm_1  |[0m I1106 10:30:17.840172       1 checkctl.go:522] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:30:17.961800       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:30:17.963318       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:30:18.247672       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:30:18.249137       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 10:30:18.348173       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 10:30:18.349477       1 server.go:594] Set CM checkalive.lemon_check: OK
+[32mredis_1       |[0m [1 | signal handler] (1509964233) Received SIGTERM, scheduling shutdown...
+[33mrefresh-cm_1  |[0m 2017-11-06 10:30:33.846  INFO 1 --- [       Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5387f9e0: startup date [Mon Nov 06 10:28:14 UTC 2017]; root of context hierarchy
+[36mrefreshcm_checker-cm_1 exited with code 0
+[0m[32mredis_1       |[0m [1] 06 Nov 10:30:33.751 # User requested shutdown...
+[33mrefresh-cm_1  |[0m 2017-11-06 10:30:34.049  INFO 1 --- [       Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+[33mrefresh-cm_1  |[0m 2017-11-06 10:30:34.077  INFO 1 --- [       Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+[33mrefresh-cm_1  |[0m 2017-11-06 10:30:34.086  INFO 1 --- [       Thread-6] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'threadPoolTaskScheduler'
+[33mrefresh-cm_1  |[0m 2017-11-06 10:30:34.087  INFO 1 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[32mredis_1       |[0m [1] 06 Nov 10:30:34.104 # Redis is now ready to exit, bye bye...
+[33mrefresh-cm_1  |[0m ?????
+[33mrefresh-cm_1  |[0m ?????
+[32mrefreshcm_redis_1 exited with code 0
+[0m[33mrefreshcm_refresh-cm_1 exited with code 143
+[0m
