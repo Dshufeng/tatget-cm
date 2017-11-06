@@ -1,0 +1,785 @@
+Attaching to refreshcm_checker-cm_1, refreshcm_redis_1, refreshcm_refresh-cm_1
+[36mchecker-cm_1  |[0m Start gRPC Gateway into host :10061
+[36mchecker-cm_1  |[0m http on host: [::]:10062
+[36mchecker-cm_1  |[0m Start gRPC on host [::]:10061
+[32mrefresh-cm_1  |[0m OpenJDK 64-Bit Server VM warning: ignoring option PermSize=128m; support was removed in 8.0
+[32mrefresh-cm_1  |[0m OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+[33mredis_1       |[0m Starting redis-server...
+[33mredis_1       |[0m [1] 06 Nov 07:29:17.299 # Server started, Redis version 2.8.4
+[33mredis_1       |[0m [1] 06 Nov 07:29:17.300 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[32mrefresh-cm_1  |[0m 
+[32mrefresh-cm_1  |[0m   .   ____          _            __ _ _
+[32mrefresh-cm_1  |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[32mrefresh-cm_1  |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[32mrefresh-cm_1  |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[32mrefresh-cm_1  |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[32mrefresh-cm_1  |[0m  =========|_|==============|___/=/_/_/_/
+[32mrefresh-cm_1  |[0m  :: Spring Boot ::        (v1.5.3.RELEASE)
+[32mrefresh-cm_1  |[0m 
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:20.381  INFO 1 --- [           main] cn.com.isc.App                           : Starting App v0.0.1-SNAPSHOT on 1ef5f472432a with PID 1 (/refresh-cm.jar started by root in /)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:20.399  INFO 1 --- [           main] cn.com.isc.App                           : No active profile set, falling back to default profiles: default
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:20.583  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5387f9e0: startup date [Mon Nov 06 07:29:20 UTC 2017]; root of context hierarchy
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:23.975  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:24.476  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:24.540  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.IPRepository.
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:24.547  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.LoginFilterRepository.
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:24.548  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.ConfigRepository.
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:24.548  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.TokenRepository.
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:24.548  INFO 1 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.com.isc.repository.FlagRepository.
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:25.598  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$69d3fb57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:25.712  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'threadPoolTaskSchedulerConfig' of type [io.stackdocker.iscc.flagserver.ThreadPoolTaskSchedulerConfig$$EnhancerBySpringCGLIB$$77260a05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:25.937  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:25.978  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:25.994  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:25.995  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$b2e63175] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:27.031  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:27.076  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:27.099  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:27.929  INFO 1 --- [ost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:28.251  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:28.251  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7708 ms
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:29.245  INFO 1 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:29.290  INFO 1 --- [ost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+[32mrefresh-cm_1  |[0m 	name: default
+[32mrefresh-cm_1  |[0m 	...]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:29.495  INFO 1 --- [ost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:29.496  INFO 1 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:29.502  INFO 1 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:29.602  INFO 1 --- [ost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:30.641  INFO 1 --- [ost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.266  INFO 1 --- [ost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.482  INFO 1 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.945  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.958  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.959  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.959  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.959  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.959  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'ipFilter' to urls: [/*]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:31.959  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loginFilter' to urls: [/*]
+[32mrefresh-cm_1  |[0m Hibernate: select ipfilter0_.id as id1_3_0_, ipfilter0_.value as value2_3_0_ from ip_filter ipfilter0_ where ipfilter0_.id=?
+[32mrefresh-cm_1  |[0m ??????
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:32.462  INFO 1 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:33.010  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.206  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveteam],methods=[POST]}" onto public boolean cn.com.isc.controller.ConfigController.saveteamtoken(java.util.List<cn.com.isc.entity.Token>)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.207  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveConfig],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.ConfigController.saveIpFilter(cn.com.isc.entity.Config)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.207  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConfig],methods=[GET]}" onto public cn.com.isc.entity.Config cn.com.isc.controller.ConfigController.get()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.208  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getMechineFlag],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> cn.com.isc.controller.FlagController.getFlag(cn.com.isc.entity.Flag)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.208  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Validate],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> cn.com.isc.controller.FlagController.get(cn.com.isc.entity.Flag)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.209  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.FlagController.get()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.209  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/open],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.FlagController.test()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.209  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/saveIpFileter],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.IpFilterController.saveIpFilter(cn.com.isc.entity.IpFilter)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.209  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getIpFilter],methods=[GET]}" onto public cn.com.isc.entity.IpFilter cn.com.isc.controller.IpFilterController.get()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.210  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/checkLogin],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.com.isc.controller.LoginController.checkLogin(cn.com.isc.entity.Admin,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.210  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String cn.com.isc.controller.WelcomeController.welcome()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.221  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-deletion],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.deleteRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.222  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/statuses],methods=[GET]}" onto public java.util.List<io.stackdocker.iscc.flagserver.api.RefreshReqResp> io.stackdocker.iscc.flagserver.controller.RefreshController.getAll()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.222  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/statuses/{id}],methods=[GET]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.getOne(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.222  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/find/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.stackdocker.iscc.flagserver.api.RefreshReqResp> io.stackdocker.iscc.flagserver.controller.RefreshController.findOne(java.lang.Integer)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.222  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-updation],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.updateRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.222  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/refresh-creation],methods=[POST]}" onto public io.stackdocker.iscc.flagserver.api.RefreshReqResp io.stackdocker.iscc.flagserver.controller.RefreshController.createRefresh(io.stackdocker.iscc.flagserver.api.RefreshReqResp)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.222  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/Validate],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> io.stackdocker.iscc.flagserver.controller.RefreshController.get(cn.com.isc.entity.Flag)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.225  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.225  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.226  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.228  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.237  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.524  INFO 1 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.731  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5387f9e0: startup date [Mon Nov 06 07:29:20 UTC 2017]; root of context hierarchy
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.855  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.855  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:34.950  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:35.014  INFO 1 --- [           main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:35.899  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:35.924  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:35.924  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:35.976  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:36.058  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:36.569  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingPOST_1
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:36.587  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:36.596  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveIpFilterUsingPOST_1
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:36.727  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingPOST_2
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:37.500  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+[32mrefresh-cm_1  |[0m Hibernate: select flag0_.id as id1_2_, flag0_.round as round2_2_, flag0_.team_no as team_no3_2_, flag0_.token as token4_2_, flag0_.env as env5_2_, flag0_.md5string as md6_2_ from flag flag0_
+[32mrefresh-cm_1  |[0m Flag????
+[32mrefresh-cm_1  |[0m Hibernate: select token0_.id as id1_4_, token0_.team_no as team_no2_4_, token0_.token_value as token_va3_4_ from token token0_
+[32mrefresh-cm_1  |[0m Token????
+[32mrefresh-cm_1  |[0m 2017-11-06 07:29:37.679  INFO 1 --- [           main] cn.com.isc.App                           : Started App in 18.201 seconds (JVM running for 20.812)
+[32mrefresh-cm_1  |[0m ??????????
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler2
+[36mchecker-cm_1  |[0m I1106 07:35:14.537490       1 server.go:540] go to reap: ""
+[36mchecker-cm_1  |[0m proto: no coders for int
+[36mchecker-cm_1  |[0m I1106 07:35:19.223800       1 server.go:267] go to create: "name:\"lemon_check\" command:\"python\" command:\"awd01_lemon_cms_check.py\" args:\"--host=$(ip)\" args:\"--port=$(port)\" args:\"--send-test\" args:\"--test-url=$(php_web)\" work_dir:\"awd01_lemon_cms\" periodic:10 duration:2096411 dest_configurations:<key:\"team1\" value:<name:\"lemon_vm-4\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"64155\" > > > dest_configurations:<key:\"team2\" value:<name:\"lemon_vm-3\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"44760\" > > > dest_configurations:<key:\"team3\" value:<name:\"lemon_vm-2\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"36658\" > > > dest_configurations:<key:\"team4\" value:<name:\"lemon_vm-1\" tpl:<key:\"ip\" value:\"192.168.1.115\" > tpl:<key:\"php_web\" value:\"http://openadmin.xn/api/Violation/deduct\" > tpl:<key:\"port\" value:\"63008\" > > > "
+[36mchecker-cm_1  |[0m Visited: examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py
+[36mchecker-cm_1  |[0m filepath.Walk() returned Stop recursive searching
+[36mchecker-cm_1  |[0m command: awd01_lemon_cms_check.py
+[36mchecker-cm_1  |[0m Dest config of team2: name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > Dest config of team3: name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > Dest config of team4: name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > Dest config of team1: name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:29.87390978 +0000 UTC m=+373.789373560 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:29.87390978 +0000 UTC m=+373.789373560 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:29.87390978 +0000 UTC m=+373.789373560 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:29.87390978 +0000 UTC m=+373.789373560 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:33.001666       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:33.278488       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:33.555789       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:33.567017       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:33.720331       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:33.721858       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:33.816239       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:33.816973       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:35:33Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:39.874649019 +0000 UTC m=+383.790112744 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:39.874649019 +0000 UTC m=+383.790112744 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:39.874649019 +0000 UTC m=+383.790112744 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:39.874649019 +0000 UTC m=+383.790112744 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:40.009525       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:40.010913       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:40.115303       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:40.116060       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:40.224480       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:40.226650       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:40.360162       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:40.362141       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:35:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:49.874171087 +0000 UTC m=+393.789634901 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:49.874171087 +0000 UTC m=+393.789634901 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:49.874171087 +0000 UTC m=+393.789634901 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:49.874171087 +0000 UTC m=+393.789634901 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:50.017750       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:50.019272       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:50.128156       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:50.129629       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:50.233898       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:50.235587       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:50.356005       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:50.357895       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:35:50Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:59.873942428 +0000 UTC m=+403.789406225 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:59.873942428 +0000 UTC m=+403.789406225 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:59.873942428 +0000 UTC m=+403.789406225 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:35:59.873942428 +0000 UTC m=+403.789406225 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:35:59.997661       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:35:59.998294       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:00.098976       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:00.101276       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:00.200290       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:00.201745       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:00.296273       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:00.303220       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:00Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:09.874336668 +0000 UTC m=+413.789800559 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:09.874336668 +0000 UTC m=+413.789800559 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:09.874336668 +0000 UTC m=+413.789800559 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:09.874336668 +0000 UTC m=+413.789800559 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:10.079575       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:10.080704       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:10.174345       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:10.174991       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:10.283098       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:10.286158       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:10.385256       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:10.386786       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:10Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:19.874296734 +0000 UTC m=+423.789760624 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:19.874296734 +0000 UTC m=+423.789760624 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:19.874296734 +0000 UTC m=+423.789760624 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:19.874296734 +0000 UTC m=+423.789760624 -> key: team3
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:20.586541       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:20.588261       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:20.825273       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:20.830871       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m I1106 07:36:20.939747       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:20.941321       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:21.050692       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:21.052068       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:20Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:10Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:29.873957931 +0000 UTC m=+433.789421726 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:29.873957931 +0000 UTC m=+433.789421726 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:29.873957931 +0000 UTC m=+433.789421726 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:29.873957931 +0000 UTC m=+433.789421726 -> key: team3
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:30.013541       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:30.018214       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:30.125757       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:30.128177       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:30.229611       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:30.231302       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:30.330513       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:30.332389       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:10Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:39.874338785 +0000 UTC m=+443.789802506 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:39.874338785 +0000 UTC m=+443.789802506 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:39.874338785 +0000 UTC m=+443.789802506 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:39.874338785 +0000 UTC m=+443.789802506 -> key: team1
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:40.482930       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:40.484927       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:40.602809       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:40.604281       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:40.708140       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:40.709513       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:40.801093       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:40.803039       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:40Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:10Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:49.874733294 +0000 UTC m=+453.790197215 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:49.874733294 +0000 UTC m=+453.790197215 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:49.874733294 +0000 UTC m=+453.790197215 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:49.874733294 +0000 UTC m=+453.790197215 -> key: team1
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:50.019021       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:50.020372       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:50.119193       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:50.120515       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:50.219622       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:50.221520       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:36:50.317976       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:36:50.320115       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:10Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:59.874394932 +0000 UTC m=+463.789858823 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:59.874394932 +0000 UTC m=+463.789858823 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:59.874394932 +0000 UTC m=+463.789858823 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:36:59.874394932 +0000 UTC m=+463.789858823 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:00.046579       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:00.047932       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:00.146058       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:00.147677       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:00.241764       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:00.243911       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:00.341044       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:00.342535       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:00Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:09.874326508 +0000 UTC m=+473.789790379 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:09.874326508 +0000 UTC m=+473.789790379 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:09.874326508 +0000 UTC m=+473.789790379 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:09.874326508 +0000 UTC m=+473.789790379 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:10.052415       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:10.053771       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:10.148892       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:10.150450       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:10.246388       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:10.247912       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:10.334245       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:10.336389       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:10Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:19.874270765 +0000 UTC m=+483.789734561 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:19.874270765 +0000 UTC m=+483.789734561 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:19.874270765 +0000 UTC m=+483.789734561 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:19.874270765 +0000 UTC m=+483.789734561 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:19.996882       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:19.999347       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:20.098857       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:20.100281       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:20.200037       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:20.202487       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:20.299461       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:20.300935       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:20Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:29.874190044 +0000 UTC m=+493.789653934 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:29.874190044 +0000 UTC m=+493.789653934 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:29.874190044 +0000 UTC m=+493.789653934 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:29.874190044 +0000 UTC m=+493.789653934 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:30.010881       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:30.013145       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:30.110197       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:30.111654       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:30.206609       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:30.207948       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:30.302925       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:30.305355       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:30Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:39.874648553 +0000 UTC m=+503.790112524 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:39.874648553 +0000 UTC m=+503.790112524 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:39.874648553 +0000 UTC m=+503.790112524 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:39.874648553 +0000 UTC m=+503.790112524 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:40.024082       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:40.025390       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:40.122140       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:40.123470       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:40.223626       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:40.224977       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:40.310188       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:40.312164       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:49.874267989 +0000 UTC m=+513.789731905 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:49.874267989 +0000 UTC m=+513.789731905 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:49.874267989 +0000 UTC m=+513.789731905 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:49.874267989 +0000 UTC m=+513.789731905 -> key: team2
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:50.539761       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:50.542132       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:50.681543       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:50.683219       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:50.813668       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:50.815304       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:37:50.939704       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:37:50.941378       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:50Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:30Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:59.874265311 +0000 UTC m=+523.789729106 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:59.874265311 +0000 UTC m=+523.789729106 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:59.874265311 +0000 UTC m=+523.789729106 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:37:59.874265311 +0000 UTC m=+523.789729106 -> key: team3
+[36mchecker-cm_1  |[0m I1106 07:38:00.004235       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:00.006426       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:00.108226       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:00.111425       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:00.216781       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:00.220032       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:00.322030       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:00.323470       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:36:50Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:50Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:09.87435559 +0000 UTC m=+533.789819315 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:09.87435559 +0000 UTC m=+533.789819315 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:09.87435559 +0000 UTC m=+533.789819315 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:09.87435559 +0000 UTC m=+533.789819315 -> key: team1
+[36mchecker-cm_1  |[0m I1106 07:38:10.249231       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:10.251068       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:10.379254       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:10.381299       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:10.483096       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:10.484450       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:10.577048       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:10.578205       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:50Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:19.874379134 +0000 UTC m=+543.789842930 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:19.874379134 +0000 UTC m=+543.789842930 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:19.874379134 +0000 UTC m=+543.789842930 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:19.874379134 +0000 UTC m=+543.789842930 -> key: team1
+[36mchecker-cm_1  |[0m I1106 07:38:20.500953       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m I1106 07:38:20.993073       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m I1106 07:38:21.354325       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m I1106 07:38:21.704412       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:50Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:29.874212739 +0000 UTC m=+553.789676629 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:29.874212739 +0000 UTC m=+553.789676629 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:29.874212739 +0000 UTC m=+553.789676629 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:29.874212739 +0000 UTC m=+553.789676629 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:30.038826       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:30.040212       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:30.139669       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:30.141059       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m I1106 07:38:30.247634       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:30.249439       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:30.375056       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:30.376654       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:37:50Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:30Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:39.874250615 +0000 UTC m=+563.789714462 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:39.874250615 +0000 UTC m=+563.789714462 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:39.874250615 +0000 UTC m=+563.789714462 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:39.874250615 +0000 UTC m=+563.789714462 -> key: team2
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:40.149348       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:40.150838       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:40.288779       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:40.290101       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:40.430655       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:40.432849       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:38:40.553519       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:38:40.554914       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:30Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:49.874245736 +0000 UTC m=+573.789709626 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:49.874245736 +0000 UTC m=+573.789709626 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:49.874245736 +0000 UTC m=+573.789709626 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:49.874245736 +0000 UTC m=+573.789709626 -> key: team1
+[36mchecker-cm_1  |[0m I1106 07:38:50.392809       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m I1106 07:38:50.865668       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m I1106 07:38:51.323803       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m I1106 07:38:51.737892       1 checkctl.go:520] Failed to execute: exit status 1
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:30Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:59.874623477 +0000 UTC m=+583.790087339 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:59.874623477 +0000 UTC m=+583.790087339 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:59.874623477 +0000 UTC m=+583.790087339 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:38:59.874623477 +0000 UTC m=+583.790087339 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:00.067016       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:00.068356       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:00.169288       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:00.170786       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:00.274144       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:00.275862       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:00.408127       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:00.409552       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:00Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:09.874140304 +0000 UTC m=+593.789604194 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:09.874140304 +0000 UTC m=+593.789604194 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:09.874140304 +0000 UTC m=+593.789604194 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:09.874140304 +0000 UTC m=+593.789604194 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:10.025430       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:10.026948       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:10.129625       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:10.130976       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:10.232004       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:10.233849       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:10.366518       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:10.382209       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:10Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:19.874321955 +0000 UTC m=+603.789786026 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:19.874321955 +0000 UTC m=+603.789786026 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:19.874321955 +0000 UTC m=+603.789786026 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:19.874321955 +0000 UTC m=+603.789786026 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:20.028379       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:20.029748       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:20.129099       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:20.131369       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:20.232654       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:20.234771       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:20.331565       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:20.333203       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:20Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:29.874572481 +0000 UTC m=+613.790036397 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:29.874572481 +0000 UTC m=+613.790036397 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:29.874572481 +0000 UTC m=+613.790036397 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:29.874572481 +0000 UTC m=+613.790036397 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:30.010761       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:30.012152       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:30.115806       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:30.117948       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:30.220794       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:30.222230       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:30.336860       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:30.337463       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:30Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:39.879148303 +0000 UTC m=+623.794612224 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:39.879148303 +0000 UTC m=+623.794612224 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:39.879148303 +0000 UTC m=+623.794612224 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:39.879148303 +0000 UTC m=+623.794612224 -> key: team4
+[36mchecker-cm_1  |[0m I1106 07:39:40.022230       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:40.024051       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m I1106 07:39:40.124819       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:40.126500       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:40.225260       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:40.227681       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:40.350085       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:40.351967       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:49.874825235 +0000 UTC m=+633.790289155 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:49.874825235 +0000 UTC m=+633.790289155 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:49.874825235 +0000 UTC m=+633.790289155 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:49.874825235 +0000 UTC m=+633.790289155 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:50.040601       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:50.042093       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:50.148490       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:50.149842       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:50.267052       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:50.268471       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:50.393594       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:50.394969       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:50Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:59.873959191 +0000 UTC m=+643.789423012 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:59.873959191 +0000 UTC m=+643.789423012 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:59.873959191 +0000 UTC m=+643.789423012 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:39:59.873959191 +0000 UTC m=+643.789423012 -> key: team3
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:39:59.997402       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:39:59.999086       1 server.go:594] Set CM checkalive.lemon_check: OK
+[32mrefresh-cm_1  |[0m Runnable Task with Cron Trigger on thread ThreadPoolTaskScheduler1
+[32mrefresh-cm_1  |[0m ??????????
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:00.113370       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:00.114711       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:00.213765       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:00.216189       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:00.318483       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:00.320275       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:40Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:50Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:09.874708811 +0000 UTC m=+653.790172682 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:09.874708811 +0000 UTC m=+653.790172682 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:09.874708811 +0000 UTC m=+653.790172682 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:09.874708811 +0000 UTC m=+653.790172682 -> key: team2
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:10.026940       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:10.028326       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:10.129376       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:10.130780       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:10.228582       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:10.230001       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:10.328127       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:10.330218       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:10Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:00Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:50Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:19.87449536 +0000 UTC m=+663.789959080 -> key: team4
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:19.87449536 +0000 UTC m=+663.789959080 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:19.87449536 +0000 UTC m=+663.789959080 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:19.87449536 +0000 UTC m=+663.789959080 -> key: team3
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:19.985435       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:19.987053       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:20.115210       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:20.116865       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:20.218620       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:20.220855       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:20.314804       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:20.316107       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:10Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:20Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:39:50Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:29.874757579 +0000 UTC m=+673.790221412 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:29.874757579 +0000 UTC m=+673.790221412 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:29.874757579 +0000 UTC m=+673.790221412 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:29.874757579 +0000 UTC m=+673.790221412 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:30.004845       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:30.006218       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:30.110156       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:30.111987       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:30.212726       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:30.214160       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:30.330391       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:30.332094       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:10Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:20Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:30Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:39.873931303 +0000 UTC m=+683.789395224 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:39.873931303 +0000 UTC m=+683.789395224 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:39.873931303 +0000 UTC m=+683.789395224 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:39.873931303 +0000 UTC m=+683.789395224 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:40.048410       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:40.050066       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:40.148730       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:40.151178       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:40.249434       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:40.251194       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:40.351973       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:40.353321       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m name:"lemon_check" command:"python" command:"awd01_lemon_cms_check.py" args:"--host=$(ip)" args:"--port=$(port)" args:"--send-test" args:"--test-url=$(php_web)" work_dir:"awd01_lemon_cms" periodic:10 duration:2096411 dest_configurations:<key:"team1" value:<name:"lemon_vm-4" args:"--host=192.168.1.115" args:"--port=64155" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"64155" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:38:10Z" > > dest_configurations:<key:"team2" value:<name:"lemon_vm-3" args:"--host=192.168.1.115" args:"--port=44760" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"44760" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:10Z" > > dest_configurations:<key:"team3" value:<name:"lemon_vm-2" args:"--host=192.168.1.115" args:"--port=36658" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"36658" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:20Z" > > dest_configurations:<key:"team4" value:<name:"lemon_vm-1" args:"--host=192.168.1.115" args:"--port=63008" args:"--send-test" args:"--test-url=http://openadmin.xn/api/Violation/deduct" tpl:<key:"ip" value:"192.168.1.115" > tpl:<key:"php_web" value:"http://openadmin.xn/api/Violation/deduct" > tpl:<key:"port" value:"63008" > state_message:"(True, 'msg')\n(True, 'msg')\n(True, 'msg')\n\n" timestamp:"2017-11-06T07:40:40Z" > > destination_path:"examples/python/check-alive/awd01_lemon_cms/awd01_lemon_cms_check.py" 
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:49.874594284 +0000 UTC m=+693.790058154 -> key: team1
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:49.874594284 +0000 UTC m=+693.790058154 -> key: team2
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:49.874594284 +0000 UTC m=+693.790058154 -> key: team3
+[36mchecker-cm_1  |[0m Tick at 2017-11-06 07:40:49.874594284 +0000 UTC m=+693.790058154 -> key: team4
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:50.015278       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:50.017684       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:50.126257       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:50.127723       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:50.229212       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:50.230799       1 server.go:594] Set CM checkalive.lemon_check: OK
+[36mchecker-cm_1  |[0m (True, 'msg')
+[36mchecker-cm_1  |[0m 
+[36mchecker-cm_1  |[0m I1106 07:40:50.327755       1 server.go:566] write cm into cache
+[36mchecker-cm_1  |[0m I1106 07:40:50.329590       1 server.go:594] Set CM checkalive.lemon_check: OK
